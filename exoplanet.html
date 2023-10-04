@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Events</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script language="javascript" src="Project-3-code.py" type="text/javascript"></script> -->
+</head>
+
+<body>
+  <div id="x"></div>
+  <script>
+    var img = document.createElement("img");
+    img.src = "milky-way-map.jpg";
+    var div = document.getElementById("x");
+    var div = document.getElementById("x");
+    div.appendChild(img);
+    //block.setAttribute("style", "text-align:center");
+  </script>
+  <!-- <img id = "img1" class = "img-thumbnail" /> -->
+  <div id="plot"></div>
+
+  <select id="selDataset">
+    <option value="dataset1">DataSet1</option>
+    <option value="dataset2">DataSet2</option>
+  </select>
+
+  <script src="exoplanet.js"></script>
+
+</body>
+
+</html>
