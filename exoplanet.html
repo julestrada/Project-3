@@ -19,7 +19,7 @@
       background: #716e94 linear-gradient(#716e94, #000000);
       background-size: 100% 100%;
       overflow: auto;
-      width: 100%;
+      width: auto;
       height: 100%;
       margin: 0;
       padding: 0;
@@ -57,13 +57,14 @@
     </div>
   </div>
 
-  
+  <div id="plot"></div>
 
   <select id="selDataset">
-    <option value="dataset1">Radius</option>
-    <option value="dataset2">Mass</option>
+    <option value="dataset1">Stellar Neighborhood Map</option>
+    <option value="dataset2">Radius vs. Mass</option>
+    <option value="dataset3">Solar Irradiance vs Temperature</option>
   </select>
-  <img src="space-background.png" alt="Space Map" class="center">
+  <img src="milky-way-map.jpg" alt="Space Map" class="center">
   <script src="exoplanet.js"></script>
 
 </body>

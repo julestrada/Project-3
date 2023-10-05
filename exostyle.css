@@ -1,0 +1,9 @@
+/* Remove the default margin and padding from the body. */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+
