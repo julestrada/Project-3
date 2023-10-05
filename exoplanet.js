@@ -30,13 +30,13 @@ function init() {
     let y = [];
   
     if (dataset === 'dataset1') {
-      x = [6371];
-      y = [9.82];
+      x = [6.389, 11.781, 1.950, 3.670];
+      y = [47.67450, 953.49000, 8.75000, 14.67000];
     }
   
     else if (dataset === 'dataset2') {
-      x = [3389];
-      y = [3.72];
+      x = [749.075238, 144.018068, 222.423647, 222.423647];
+      y = [-1724.205756, -1177.126315, 836.542327, 836.542327];
     }
   
     // Note the extra brackets around 'x' and 'y'
@@ -44,5 +44,17 @@ function init() {
     Plotly.restyle("plot", "y", [y]);
   }
   
+  var canvas = document.createElement("canvas");
+  canvas.setAttribute("width", window.innerWidth);
+  canvas.setAttribute("height", window.innerHeight);
+  canvas.setAttribute("style", "position: absolute; x:0; y:0;");
+  document.body.appendChild(canvas);
+  
+  //Then you can draw a point at (1000,1000) like this:
+  
+  //var ctx = canvas.getContext("2d");
+  //ctx.fillRect(1000,1000,1,1);
+
   init();
   
+
