@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exoplanet Systems</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script language="javascript" src="Project-3-code.py" type="text/javascript"></script> -->
+  <style>
+    body{
+      background: #000000;
+    }
+
+    .jumbotron {
+      background: #716e94 linear-gradient(#716e94, #000000);
+      background-size: 100% 100%;
+      overflow: auto;
+      width: auto;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- <img id = "img1" class = "img-thumbnail" /> -->
+
+  <!-- COPY OF FONT AND COLOR FOR TEXT <p style="font-family: menlo; color: #fff8e7""></p> -->
+
+  <div class="container">
+    <div class="jumbotron" style="text-align:center">
+      <h2><p style="font-family: menlo; color: #fff8e7">Exoplanet Data</p></h1>
+        <h3><p style="font-family: menlo; color: #fff8e7">heading-3</p>
+          <span class="star-wars"></span>
+      </h2>
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+          <h1 class="counter"><p style="font-family: menlo; color: #fff8e7">0</p></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+          <button type="button" class="btn btn-default btn-lg upvote">
+            <span class="glyphicon glyphicon-circle-arrow-up"></span> Earth-Like
+          </button>
+          <button type="button" class="btn btn-default btn-lg downvote">
+            <span class="glyphicon glyphicon-circle-arrow-down"></span> Alien-Habitable
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="plot"></div>
+
+  <select id="selDataset">
+    <option value="dataset1">Stellar Neighborhood Map</option>
+    <option value="dataset2">Radius vs. Mass</option>
+    <option value="dataset3">Solar Irradiance vs Temperature</option>
+  </select>
+  <img src="milky-way-map.jpg" alt="Space Map" class="center">
+  <script src="exoplanet.js"></script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scatter Chart with amCharts</title>
+    <!-- Include the amCharts library -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+</head>
+<body>
+    <!-- Create a container for the chart -->
+    <div id="chartdiv" style="width: 100%; height: 400px;"></div>
+
+    <!-- Create a script to generate the chart -->
+    <script src="scatter_chart.js"></script>
+</body>
+</html>
