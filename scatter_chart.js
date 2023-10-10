@@ -48,6 +48,9 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
   title: "pl_eqt (equilibrium temp)" // Corrected closing parenthesis
 }));
 
+
+
+
 // Create series
 // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 var series0 = chart.series.push(am5xy.LineSeries.new(root, {
@@ -132,14 +135,15 @@ trendSeries1.data.setAll([
   { x: 1, y: 1 },
   { x: 12, y: 19 }
 ])
-
+return (
 // Add cursor
 // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
 chart.set("cursor", am5xy.XYCursor.new(root, {
   xAxis: xAxis,
   yAxis: yAxis,
   snapToSeries: [series0, series1]
-}));
+})); )
+
 
 // Add scrollbars
 // https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
