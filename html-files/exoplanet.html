@@ -30,13 +30,12 @@
 
 <body>
   <!-- <img id = "img1" class = "img-thumbnail" /> -->
-
   <!-- COPY OF FONT AND COLOR FOR TEXT <p style="font-family: menlo; color: #fff8e7""></p> -->
 
   <div class="container">
     <div class="jumbotron" style="text-align:center">
-      <h2><p style="font-family: menlo; color: #fff8e7">Exoplanet Data</p></h1>
-        <h3><p style="font-family: menlo; color: #fff8e7">heading-3</p>
+      <h2><p style="font-family: menlo; color: #fff8e7">Earth-Like Score Data</p></h1>
+        <h3><p style="font-family: menlo; color: #fff8e7">This graph shows the Stellar Neighborhood, where the Y-axis points to the center of the Milky Way Galaxy </p>
           <span class="star-wars"></span>
       </h2>
       <div class="row">
@@ -45,54 +44,32 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-offset-4 col-md-4">
-<<<<<<< HEAD
-          <button type="button" class="btn btn-default btn-lg upvote">
-            <span class="glyphicon glyphicon-circle-arrow-up"></span> Earth-Like
-          </button>
-          <button type="button" class="btn btn-default btn-lg downvote">
-            <span class="glyphicon glyphicon-circle-arrow-down"></span> Alien-Habitable
-          </button>
-=======
-          <button type="button" onclick = "earthColorScheme"> Earth-Like </button>
-          <button type="button" onclick = "alienColorScheme"> Alien-Habitable </button>
->>>>>>> d48129af4ec41a25202b8986a1bff0c42f98e00d
-        </div>
+       
       </div>
     </div>
   </div>
 
   <div id="plot"></div>
 
-  <select id="selDataset">
-    <option value="dataset1">Stellar Neighborhood Map</option>
-    <option value="dataset2">Radius vs. Mass</option>
-    <option value="dataset3">Solar Irradiance vs Temperature</option>
-  </select>
-  <img src="milky-way-map.jpg" alt="Space Map" class="center">
-  <script src="exoplanet.js"></script>
+  <img src="../milky-way-map.jpg" alt="Space Map" class="center">
+  <div class="container">
+    <div class="jumbotron" style="text-align:center">
+      <h2><p style="font-family: menlo; color: #fff8e7">Radius vs Mass Data</p></h1>
+        <span class="star-wars"></span>
+      </h2>
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+          <h1 class="counter"><p style="font-family: menlo; color: #fff8e7">0</p></h1>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+  <div id="plot2"></div>
+  <!-- <script> var jsonData = JSON.parse(`<<python-code/exoplanet_data.json>>`) </script> -->
+  <script src="../javascript-code/exoplanet.js"></script>
 
 </body>
 
 </html>
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Scatter Chart with amCharts</title>
-    <!-- Include the amCharts library -->
-    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-</head>
-<body>
-    <!-- Create a container for the chart -->
-    <div id="chartdiv" style="width: 100%; height: 400px;"></div>
-
-    <!-- Create a script to generate the chart -->
-    <script src="scatter_chart.js"></script>
-</body>
-</html>
-=======
->>>>>>> d48129af4ec41a25202b8986a1bff0c42f98e00d
